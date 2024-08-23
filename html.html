@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">𝐎𝐮𝐭𝐟𝐢𝐭𝐇𝐮𝐛 </a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Product Section -->
+    <section class="product-section">
+        <div class="container">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="https://i.postimg.cc/G3PpnLRQ/Screenshot-20240818-115738-2.jpg" id="current-image" alt="Product Image">
+                </div>
+                <div class="image-thumbnails">
+                    <img src="https://i.postimg.cc/gjbqXYts/Screenshot-20240818-115754-2.jpg" alt=" 1" onclick="changeImage('https://i.postimg.cc/gjbqXYts/Screenshot-20240818-115754-2.jpg')">
+                    <img src="https://i.postimg.cc/253PTwkJ/Screenshot-20240818-115750-2.jpg" alt=" 2" onclick="changeImage('https://i.postimg.cc/253PTwkJ/Screenshot-20240818-115750-2.jpg')">
+                    <img src="https://i.postimg.cc/B6PtWHg7/Screenshot-20240818-115745-2.jpg" alt=" 3" onclick="changeImage('https://i.postimg.cc/B6PtWHg7/Screenshot-20240818-115745-2.jpg')">
+                    <img src="https://i.postimg.cc/G3PpnLRQ/Screenshot-20240818-115738-2.jpg" alt=" 4" onclick="changeImage('https://i.postimg.cc/G3PpnLRQ/Screenshot-20240818-115738-2.jpg')">
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-name">AAYU Women Red Maxi Dress</h1>
+                <p class="product-description"> Aayu women maxi Georgette fabric, sweetheart neck, solid print, maxi length & short sleeves casual and party wear dresses.</p>
+                <span class="product-price">₹999</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews and Ratings Section -->
+    <section class="customer-reviews">
+        <div class="container">
+            <h2>Customer Reviews</h2>
+            <div class="review-item">
+                <p><strong>Amrutha Gowda</strong></p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span>
+                </div>
+                <p>Great product! Highly recommended.</p>
+            </div>
+            <div class="review-item">
+                <p><strong>Arjun </strong></p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐</span>
+                </div>
+                <p>Good value for money.</p>
+            </div>
+            <div class="review-item">
+                <p><strong>Sneha M</strong></p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span>
+                </div>
+                <p>Excellent quality! Exceeded my expectations.</p>
+            </div>
+            <div class="review-item">
+                <p><strong>Bhavani</strong></p>
+                <div class="rating">
+                    <span>⭐⭐⭐</span>
+                </div>
+                <p>The product is okay, but the shipping was slow.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products Section -->
+    <section class="related-products">
+        <div class="container">
+            <h2>Related Products</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/NMZQv0fg/Screenshot-20240818-123245-2.jpg " alt="Related Product">
+                    <h3>Women Fit and Flare Pink dress</h3>
+                    <p>₹799</p>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/90XjyqMF/Screenshot-20240818-120128-2.jpg " alt="Related Product">
+                    <h3>A&K Women A-line Grey dress </h3>
+                    <p>₹549</p>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/65pTV82P/Screenshot-20240818-123944-2.jpg" alt="Related Product">
+                    <h3>Floral Print Maxi dress</h3>
+                    <p>₹650</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('current-image').src = imageSrc;
+        }
+    </script>
+</body>
+
+</html>

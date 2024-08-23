@@ -1,0 +1,224 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Container Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Product Section Styling */
+.product-section {
+    display: flex;
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+.product-gallery {
+    display: flex;
+    flex-direction: column;
+    width: 60%; /* Increased width for the image gallery */
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: rounded corners for the main image */
+}
+
+.image-thumbnails {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.image-thumbnails img {
+    width: 23%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+    border-radius: 5px; /* Optional: rounded corners for thumbnails */
+}
+
+.image-thumbnails img:hover {
+    border: 2px solid #e67e22;
+}
+
+.product-details {
+    margin-left: 40px; /* Adjusted spacing */
+    width: 40%; /* Adjusted width for the details section */
+}
+
+.product-name {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.product-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.product-price {
+    font-size: 24px;
+    color: #e67e22;
+    margin-bottom: 20px;
+}
+
+.add-to-cart {
+    padding: 12px 25px; /* Slightly larger button */
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px; /* Optional: rounded corners for the button */
+}
+
+.add-to-cart:hover {
+    background-color: #d35400;
+}
+
+/* Customer Reviews Section Styling */
+.customer-reviews {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.customer-reviews h2 {
+    margin-bottom: 20px;
+}
+
+.review-item {
+    background-color: #fff;
+    padding: 20px; /* Increased padding for reviews */
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    border-radius: 8px; /* Optional: rounded corners for reviews */
+}
+
+.review-item p {
+    margin-bottom: 10px;
+}
+
+.rating span {
+    font-size: 18px;
+    color: #f1c40f;
+}
+
+/* Related Products Section Styling */
+.related-products {
+    margin-top: 50px;
+}
+
+.related-products h2 {
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    width: 30%;
+    border-radius: 8px; /* Optional: rounded corners for related products */
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Optional: rounded corners for product images */
+}
+
+.product-item h3 {
+    margin: 15px 0;
+}
+
+.product-item p {
+    font-size: 18px;
+    color: #e67e22;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-gallery, .product-details {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .image-thumbnails {
+        justify-content: space-between;
+    }
+
+    .product-details {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
